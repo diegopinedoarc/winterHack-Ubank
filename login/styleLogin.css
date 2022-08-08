@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colores */
+  --bordo: rgb(37, 29, 58, 0.7);
+  --violeta: rgb(42, 37, 80);
+  --naranja: rgb(224, 77, 1, 0.8);
+  --naranjaClaro: rgba(8, 175, 36, 0.7);
+  --piel: rgba(4, 51, 70, 0.7);
+  --blanco: rgb(241, 238, 233);
+  /* fuentes */
+  --font1: "Roboto Condensed", sans-serif;
+}
+
+@media (min-width: 450px) {
+  html {
+    background: url(../imagenes/pexels-tatiana-fet-1105766.jpg) no-repeat center
+      center;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font1);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 18rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .logoName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .logo {
+    width: 4.5rem;
+    border-radius: 0.8rem;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--bordo);
+    margin-top: 1.5rem;
+    height: 18rem;
+    color: aliceblue;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+    align-items: center;
+  }
+  .logContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  .toReg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 1.2rem;
+    color: aliceblue;
+    gap: 0.5rem;
+    border-radius: 0.8rem;
+  }
+  .toReg a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: aliceblue;
+  }
+  #emailLog {
+    width: 16rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    text-align: center;
+    color: var(--bordo);
+    font-weight: bold;
+  }
+  #passwordLog {
+    width: 16rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    text-align: center;
+    color: var(--bordo);
+    font-weight: bold;
+  }
+  #loginBTN {
+    width: 16rem;
+    height: 2.5rem;
+    color: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btnReturn {
+    width: 16rem;
+    height: 2.5rem;
+    color: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btnReturn:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: black;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  #loginBTN:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: black;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .errores {
+    /* background: var(--naranjaClaro); */
+    color: var(--naranja);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    background: url(../imagenes/pexels-tatiana-fet-1105766.jpg) no-repeat center
+      center;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font1);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 18rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .logoName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .logo {
+    width: 4.5rem;
+    border-radius: 0.8rem;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--bordo);
+    margin-top: 1.5rem;
+    height: 14rem;
+    color: aliceblue;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+  }
+  .logContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  .toReg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 1.2rem;
+    color: aliceblue;
+    gap: 0.5rem;
+    border-radius: 0.8rem;
+  }
+  .toReg a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: aliceblue;
+  }
+  #emailLog {
+    width: 16rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    text-align: center;
+    color: var(--bordo);
+    font-weight: bold;
+  }
+  #passwordLog {
+    width: 16rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    text-align: center;
+    color: var(--bordo);
+    font-weight: bold;
+  }
+  #loginBTN {
+    width: 16rem;
+    height: 2.5rem;
+    color: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #loginBTN:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: black;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .errores {
+    /* background: var(--naranjaClaro); */
+    color: var(--naranja);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}

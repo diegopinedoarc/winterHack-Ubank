@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleRegistro.css" />
+    <title>U-Bank</title>
+  </head>
+  <body>
+    <hero class="hero">
+      <div class="logoName">
+        <img class="logo" src="../imagenes/logoChico.png" alt="insertlogo" />
+        <h1>U-Bank</h1>
+      </div>
+    </hero>
+    <section class="registro">
+      <h2>Registro</h2>
+      <form class="regContainer">
+        <input type="text" placeholder="Nombre" id="nombreReg" />
+        <input type="text" placeholder="Apellido" id="apellidoReg" />
+        <input
+          type="email"
+          name=""
+          id="emailRegister"
+          placeholder="Ingresa tu correo "
+        />
+        <input
+          type="password"
+          name=""
+          id="passwordRegister"
+          placeholder="Ingresa tu contraseña"
+        />
+        <input
+          type="password"
+          name=""
+          id="passwordConfirm"
+          placeholder="Confirma tu contraseña"
+        />
+        <label id="labels" for="password" class="labels"
+          >La contraseña debe contener 8 caracteres y al menos una mayuscula,
+          una minuscula, un numero y un simbolo</label
+        >
+
+        <button class="registerBTN">Registrarme</button>
+      </form>
+      <p id="errores"></p>
+    </section>
+
+    <script src="./registro.js" type="module"></script>
+  </body>
+</html>

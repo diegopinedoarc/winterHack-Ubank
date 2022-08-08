@@ -1,0 +1,870 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colores */
+  --bordo: rgb(37, 29, 58, 0.7);
+  --violeta: rgb(42, 37, 80);
+  --naranja: rgb(224, 77, 1, 0.8);
+  --naranjaClaro: rgba(8, 175, 36, 0.7);
+  --piel: rgba(4, 51, 70, 0.7);
+  --blanco: rgb(241, 238, 233);
+  /* fuentes */
+  --font1: "Roboto Condensed", sans-serif;
+}
+
+@media (min-width: 450px) {
+  html {
+    background: url(../imagenes/pexels-tatiana-fet-1105766.jpg) no-repeat center
+      center;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font1);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 100%;
+    background: var(--bordo);
+    /* background: rgba(50, 3, 104, 0.8); */
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .boxHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .boxlogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logoName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .logo {
+    width: 4.5rem;
+    border-radius: 0.8rem;
+  }
+  .main {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .btnContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    padding: 0.5rem;
+    height: auto;
+    gap: 1rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    /* background: var(--piel); */
+    height: 14rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .btnsLanding {
+    width: 12rem;
+    height: 2.5rem;
+    /* background: rgba(250, 250, 250, 0.8); */
+    background: var(--bordo);
+    color: aliceblue;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+  }
+  .btnsLanding:hover {
+    background: rgba(250, 250, 250, 0.8);
+    /* background: rgb(255, 119, 0.6); */
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+    color: var(--bordo);
+  }
+  .datos {
+    width: 100%;
+    height: 5rem;
+    border-radius: 0.5rem;
+    /* background: rgba(50, 3, 104, 0.9); */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px 1px black;
+    gap: 1rem;
+  }
+  .deslog {
+    width: 3.5rem;
+    height: 3.5rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .cuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Seccion Depositos */
+  .depositos {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    /* color: rgba(250, 250, 250, 0.8); */
+    color: aliceblue;
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    position: absolute;
+    top: 13rem;
+    left: 25rem;
+    font-size: 1.5rem;
+  }
+  .depoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #formDeposito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #montoDeposito {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  #motivoDeposito {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .textoDatos {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 110%;
+  }
+
+  /* Seccion transferencias */
+  .transferencias {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgba(250, 250, 250, 0.9);
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 13rem;
+    left: 25rem;
+  }
+  .montoTransf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .usuarioTransf {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .servicios {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgba(250, 250, 250, 0.8);
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 13rem;
+    left: 25rem;
+  }
+  #montoTransferencia {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #usuarioRecibeTransf {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .btnsServicios {
+    width: 12rem;
+    height: 2.5rem;
+    background: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+  }
+  .btnsServicios:hover {
+    color: rgba(250, 250, 250, 0.8);
+    /* background: rgb(255, 119, 0.6); */
+    background: var(--piel);
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .botoneraServicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .servicioOculto {
+    display: none;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgba(250, 250, 250, 0.8);
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    position: absolute;
+    top: 9rem;
+    left: 0rem;
+    font-size: 1.5rem;
+  }
+  .servContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .adheridos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .adheridos span {
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+  }
+  .registroServicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 20%;
+  }
+  .nuevoServicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--blanco);
+    box-shadow: 2px 2px 2px 1px black;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--bordo);
+    width: 22%;
+    height: auto;
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+  #opcionesServicio {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  #montoServicio {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  #fechaFinServicio {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .btnServicio {
+    width: 6rem;
+    height: 2.5rem;
+    background: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+  }
+  .btnServicio:hover {
+    color: rgba(250, 250, 250, 0.8);
+    /* background: rgb(255, 119, 0.6); */
+    background: var(--piel);
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .btnServicioA {
+    width: 90%;
+    height: 1.5rem;
+    background: rgb(255, 119, 0.6);
+    color: rgba(250, 250, 250, 0.8);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnServicioA:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: rgb(255, 119, 0.6);
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .off {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    background: url(../imagenes/pexels-tatiana-fet-1105766.jpg) repeat center
+      center;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font1);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 100%;
+    background: var(--bordo);
+    /* background: rgba(50, 3, 104, 0.8); */
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .boxHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .boxlogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logoName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .logo {
+    width: 2.5rem;
+    border-radius: 0.8rem;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    padding: 0.5rem;
+    height: auto;
+    gap: 1rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    /* background: var(--piel); */
+    height: 14rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .btnsLanding {
+    width: 12rem;
+    height: 2.5rem;
+    /* background: rgba(250, 250, 250, 0.8); */
+    background: var(--bordo);
+    color: aliceblue;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+  }
+  .btnsLanding:hover {
+    background: rgba(250, 250, 250, 0.8);
+    /* background: rgb(255, 119, 0.6); */
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+    color: var(--bordo);
+  }
+  .datos {
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.5rem;
+    /* background: rgba(50, 3, 104, 0.9); */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px 1px black;
+    gap: 1.5rem;
+  }
+  .datos h2 {
+    font-size: 1rem;
+  }
+  .datos h3 {
+    font-size: 1rem;
+  }
+  .deslog {
+    width: 2.5rem;
+    height: 2.5rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px black;
+    margin-bottom: 0.5rem;
+  }
+  .cuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Seccion Depositos */
+  .depositos {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    /* color: rgba(250, 250, 250, 0.8); */
+    color: aliceblue;
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    /* position: absolute; */
+    /* top: 13rem;
+    left: 25rem; */
+    font-size: 1.5rem;
+  }
+  .depoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #formDeposito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #montoDeposito {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  #motivoDeposito {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .textoDatos {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 110%;
+  }
+
+  /* Seccion transferencias */
+  .transferencias {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgba(250, 250, 250, 0.9);
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    /* position: absolute;
+    top: 13rem;
+    left: 25rem; */
+  }
+  .montoTransf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .usuarioTransf {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .servicios {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgba(250, 250, 250, 0.8);
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    /* position: absolute;
+    top: 13rem;
+    left: 25rem; */
+  }
+  #montoTransferencia {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #usuarioRecibeTransf {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .btnsServicios {
+    width: 12rem;
+    height: 2.5rem;
+    background: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+  }
+  .btnsServicios:hover {
+    color: rgba(250, 250, 250, 0.8);
+    /* background: rgb(255, 119, 0.6); */
+    background: var(--piel);
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .botoneraServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .boxs1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .servicioOculto {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgba(250, 250, 250, 0.8);
+    height: 8rem;
+    box-shadow: 2px 2px 2px 1px black;
+    height: auto;
+    padding: 1rem;
+    /* position: absolute;
+    top: 9rem;
+    left: 0rem; */
+    font-size: 1.5rem;
+  }
+  .servContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .adheridos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .adheridos span {
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+  }
+  .registroServicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .nuevoServicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--blanco);
+    box-shadow: 2px 2px 2px 1px black;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--bordo);
+    width: 100%;
+    height: auto;
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  #opcionesServicio {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  #montoServicio {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  #fechaFinServicio {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .btnServicio {
+    width: 6rem;
+    height: 2.5rem;
+    background: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+  }
+  .btnServicio:hover {
+    color: rgba(250, 250, 250, 0.8);
+    /* background: rgb(255, 119, 0.6); */
+    background: var(--piel);
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .btnServicioA {
+    width: 90%;
+    height: 1.5rem;
+    background: rgb(255, 119, 0.6);
+    color: rgba(250, 250, 250, 0.8);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnServicioA:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: var(--naranajaClaro);
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .off {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+}

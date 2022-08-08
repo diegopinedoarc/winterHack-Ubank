@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleHome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    />
+    <title>U-Bank</title>
+  </head>
+  <body>
+    <hero class="hero">
+      <div class="deslog">
+        <h4>Salir</h4>
+        <p><i class="fa-solid fa-arrow-right-from-bracket"></i></p>
+      </div>
+      <div class="logoName">
+        <div class="boxhero">
+          <div class="boxlogo">
+            <img
+              class="logo"
+              src="../imagenes/logoChico.png"
+              alt="insertlogo"
+            />
+            <h1>U-Bank</h1>
+          </div>
+
+          <h2>¡Bienvenido!</h2>
+        </div>
+      </div>
+
+      <div class="cuenta">
+        <div class="datos"></div>
+      </div>
+    </hero>
+    <main class="main">
+      <div class="btnContainer">
+        
+        <button id="depositosBTN" class="btnsLanding">Depósitos</button>
+        <button id="transferenciasBTN" class="btnsLanding">
+          Transferencias
+        </button>
+        <button id="serviciosBTN" class="btnsLanding">Servicios</button>
+      </div>
+    </main>
+    <section class="oculto">
+      <section id="depositos" class="depositos">
+        <div class="depoContainer">
+          <form id="formDeposito">
+            <div class="CBU"></div>
+            <label for="montoDeposito">Monto a depositar:</label>
+            <input type="text" name="" id="montoDeposito" />
+            <button id="depositarCash" class="btnsLanding">Depositar</button>
+            <label for="motivoDeposito">Motivo</label>
+            <select name="motivo" id="motivoDeposito">
+              <option value="" selected="selected">- Selecciona -</option>
+              <option value="pago">Pago</option>
+              <option value="prestamo">Préstamo</option>
+            </select>
+          </form>
+        </div>
+      </section>
+      <section id="servicios" class="servicios">
+        <div class="botoneraServicios">
+          <div class="boxs1"> <button class="btnsServicios" id="AdherirBTN">Adherir servicios</button>
+            <button class="btnsServicios" id="sacarBTN">Desvincular servicios</button></div>
+         <div class="boxs1"><button class="btnsServicios" id="pagarBTN">Pagar servicios</button>
+          <button class="btnsServicios" id="comprobantesBTN">Mis comprobantes</button>
+        </div>
+        </div>
+        <div id="addServ" class="servicioOculto">
+          <div class="registroServicio">
+            <select name="" id="opcionesServicio">
+              <option value="" selected="selected">- Selecciona -</option>
+              <option value="Electricidad">Electricidad</option>
+              <option value="Gas">Gas</option>
+              <option value="Internet">Internet</option>
+              <option value="Agua">Agua</option>
+            </select>
+            <input type="text" placeholder="Monto a abonar" id="montoServicio">
+            <input type="date" name="" id="fechaFinServicio" placeholder="Vencimiento">
+            <button class="btnServicio" id="addNuevoServ">Adherir</button>
+          </div>
+           <div class="servContainer">
+            <h4>Servicios Adheridos</h4>
+            <div class="adheridos">
+            <!-- <div class="nuevoServicio">
+              <h5>Servicio</h5>
+              <h2>$Costo</h2>
+              <p>Deadline</p>
+              <span class="off" id="alDia">Al dia</span>
+              <span class="off" id="vencido">Vencido</span>
+              <button class="btnServicioA">Pagar</button>
+            </div> -->
+          </div>
+           </div>
+        </div>
+        <div id="sacarServ" class="servicioOculto"></div>
+        <div id="pagarServ" class="servicioOculto"></div>
+        <div id="comprobantesServ" class="servicioOculto"></div>
+      </section>
+      <section id="transferencias" class="transferencias">
+        <div class="usuarioTransf">
+          <label for="">Usuario a transferir</label>
+          <input type="text" placeholder="Ingresa el email" id="usuarioRecibeTransf">
+        </div>
+        <div class="montoTransf">
+          <label for="montoTransferencia">Monto a transferir</label>
+          <input type="text" placeholder="Monto a Transferir" id="montoTransferencia"/>
+          <button class="btnsLanding" id="transferir">Transferir</button>
+        </div>
+        
+    </section>
+
+    <script src="./home.js" type="module"></script>
+  </body>
+</html>

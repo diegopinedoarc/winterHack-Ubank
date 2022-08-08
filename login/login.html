@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleLogin.css" />
+    <title>U-Bank</title>
+  </head>
+  <body>
+    <hero class="hero">
+      <div class="logoName">
+        <img class="logo" src="../imagenes/logoChico.png" alt="insertlogo" />
+        <h1>U-Bank</h1>
+      </div>
+    </hero>
+    <section class="login">
+      <form class="logContainer">
+        <input
+          type="email"
+          name=""
+          id="emailLog"
+          placeholder="Ingresa tu usuario"
+        />
+        <input
+          type="password"
+          name=""
+          id="passwordLog"
+          placeholder="Ingresa tu contraseña"
+        />
+        <a href=""><button id="loginBTN">Ingresar</button></a>
+
+        <h3 class="toReg">
+          No tengo cuenta <a href="../registro/registro.html"> ¡Registrarme!</a>
+        </h3>
+      </form>
+      <p class="errores" id="errores"></p>
+      <a href="../index.html"><button class="btnReturn">Volver</button></a>
+    </section>
+
+    <script src="./login.js" type="module"></script>
+  </body>
+</html>

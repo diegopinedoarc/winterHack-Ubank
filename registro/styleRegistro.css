@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colores */
+  --bordo: rgb(37, 29, 58, 0.7);
+  --violeta: rgb(42, 37, 80);
+  --naranja: rgb(224, 77, 1, 0.8);
+  --naranjaClaro: rgba(8, 175, 36, 0.7);
+  --piel: rgba(4, 51, 70, 0.7);
+  --blanco: rgb(241, 238, 233);
+  /* fuentes */
+  --font1: "Roboto Condensed", sans-serif;
+}
+
+@media (min-width: 450px) {
+  html {
+    background: url(../imagenes/pexels-tatiana-fet-1105766.jpg) no-repeat center
+      center;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font1);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    width: 18rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .logoName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .logo {
+    width: 4.5rem;
+    border-radius: 0.8rem;
+  }
+  .regContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    /* background: rgba(250, 250, 250, 0.8); */
+    background: var(--bordo);
+    width: 18rem;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+  }
+  #nombreReg {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #apellidoReg {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #emailRegister {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #passwordRegister {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #passwordConfirm {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  .registerBTN {
+    width: 16rem;
+    height: 2.5rem;
+    color: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .registerBTN:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: black;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .labels {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .errores {
+    background: var(--naranjaClaro);
+    color: var(--blanco);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    background: url(../imagenes/pexels-tatiana-fet-1105766.jpg) no-repeat center
+      center;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font1);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    width: 18rem;
+    /* background: rgba(50, 3, 104, 0.8); */
+    background: var(--bordo);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .logoName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  .logo {
+    width: 4.5rem;
+    border-radius: 0.8rem;
+  }
+  .regContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    /* background: rgba(250, 250, 250, 0.8); */
+    background: var(--bordo);
+    width: 18rem;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+  }
+  #nombreReg {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #apellidoReg {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #emailRegister {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #passwordRegister {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  #passwordConfirm {
+    width: 16rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+  }
+  .registerBTN {
+    width: 16rem;
+    height: 2.5rem;
+    color: rgba(250, 250, 250, 0.8);
+    color: var(--bordo);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .registerBTN:hover {
+    color: rgba(250, 250, 250, 0.8);
+    background: black;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  }
+  .labels {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .errores {
+    background: var(--naranjaClaro);
+    color: var(--blanco);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}

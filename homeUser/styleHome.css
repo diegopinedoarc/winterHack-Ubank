@@ -298,7 +298,7 @@
   .servicioOculto {
     display: none;
     /* flex-direction: column; */
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* background: rgba(50, 3, 104, 0.8); */
     background: var(--bordo);

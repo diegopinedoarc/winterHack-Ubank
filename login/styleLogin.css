@@ -194,7 +194,7 @@
     align-items: center;
     background: var(--bordo);
     margin-top: 1.5rem;
-    height: 14rem;
+    height: 18rem;
     color: aliceblue;
     border-radius: 0.5rem;
     box-shadow: 0.5px 0.5px 0.5px 0.5px black;
@@ -223,7 +223,7 @@
     color: aliceblue;
   }
   #emailLog {
-    width: 16rem;
+    width: 14rem;
     height: 2.2rem;
     border: none;
     border-radius: 0.8rem;
@@ -232,7 +232,7 @@
     font-weight: bold;
   }
   #passwordLog {
-    width: 16rem;
+    width: 14rem;
     height: 2.2rem;
     border: none;
     border-radius: 0.8rem;
@@ -241,7 +241,7 @@
     font-weight: bold;
   }
   #loginBTN {
-    width: 16rem;
+    width: 14rem;
     height: 2.5rem;
     color: rgba(250, 250, 250, 0.8);
     color: var(--bordo);
@@ -257,7 +257,7 @@
     box-shadow: 0.8px 0.8px 0.8px 0.8px black;
   }
   .btnReturn {
-    width: 16rem;
+    width: 14rem;
     height: 2.5rem;
     color: rgba(250, 250, 250, 0.8);
     color: var(--bordo);
